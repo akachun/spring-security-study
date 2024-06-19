@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/core_security
+    username: security
+    password: security
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: ture
+        jdbc.lob.non_contextual_creation: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+    check-template-location: true
+  main:
+    allow-bean-definition-overriding: true
